@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --cor0: #202020;
+    --cor1: #5c5c5c;
+    --cor2: #0386FF;
+    --cor3: #fafafa;
+    --cor4: #f5f5f5;
+
+    --font-titulo: 'Raleway', sans-serif;
+    --font-texto: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: var(--font-texto);
+    color: var(--cor1);
+}
+
+span {
+    color: var(--cor2);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: -0.03em;
+}
+
+header a {
+    font-weight: 500;
+    font-size: 1.1em;
+    letter-spacing: -0.01em;
+    margin-left: 56px;
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+header a:hover {
+    color: var(--cor2);
+    transition: 200ms all ease-in;
+}
+
+main {
+    margin: auto;
+    min-width: 280px;
+    max-width: 1020px;
+}
+
+main > section.mensagem {
+    text-align: center;
+    height: 55vh;
+}
+
+main > section.mensagem > article {
+    margin-top: 37%;
+    margin-bottom: 50px;
+}
+
+main > section.mensagem > article > h1 {
+    font-family: var(--font-titulo);
+    font-size: 3.1em;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    color: var(--cor0);
+}
+
+main > section.mensagem > article > p {
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: -0.005em;
+}
+
+main > section#sobre {
+    background-color: var(--cor3);
+    margin: 0px -440px;
+    padding: 0px 440px;
+}
+
+main > section#sobre > h1 {
+    font-family: var(--font-titulo);
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 50px 0px;
+    color: var(--cor0);
+}
+
+main > section#sobre > article {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+main > section#sobre > article > picture {
+    width: auto;
+    margin-left: 25px;
+}
+
+main > section#sobre > article > p {
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 25px;
+}
+
+main > section#sobre > h2 {
+    font-family: var(--font-titulo);
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 50px 0px;
+    color: var(--cor0);
+}
+
+main > section#portfolio > h1 {
+    font-family: var(--font-titulo);
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 50px 0px;
+    color: var(--cor0);
+}
+
+main > section#portfolio > article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-text {
+    margin-bottom: 25px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.alinhar-botao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.especial > a {
+    font-family: var(--font-texto);
+    color: var(--cor3);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.especial {
+    font-family: var(--font-texto);
+    font-size: 1em;
+    color: var(--cor3);
+    letter-spacing: -0.03em;
+    background-color: var(--cor2);
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.especial:hover {
+    cursor: pointer;
+}
+
+.botao {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    text-decoration: none;
+    padding: 7px 50px;
+    border-radius: 20px;
+    border: none;
+}
+
+.margem-menor {
+    margin-top: -35px;
+}
+
+main > section#contato {
+    background-color: var(--cor3);
+    margin: 0px -440px;
+    padding: 0px 440px;
+}
+
+main > section#contato > h1 {
+    font-family: var(--font-titulo);
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 50px 0px;
+    color: var(--cor0);
+}
+
+main > section#contato > article {
+    display: flex;
+    justify-content: center;
+}
+
+main > section#contato > article > aside {
+    padding-bottom: 50px;
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+main > section#contato > article > aside > img {
+    width: 20px;
+    height: 20px;
+}
+
+main > section#contato > article > aside > a {
+    text-decoration: none;
+    color: var(--cor2);
+    padding-left: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+footer > p {
+    color: var(--cor0);
+    font-size: 1em;
+    font-weight: 500;
+}
