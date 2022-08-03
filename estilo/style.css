@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-    --cor0: #202020;
+    --cor0: #1e1e1e;
     --cor1: #5c5c5c;
     --cor2: #0386FF;
     --cor3: #fafafa;
@@ -16,10 +16,6 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-body {
-  font-family: var(--font-texto);
 }
 
 span {
@@ -54,9 +50,13 @@ header > nav > a:hover {
     transition: all 300ms ease-in-out;
 }
 
-main > section.img-p {
-    height: 50vh;
+main {
+    font-family: var(--font-texto);
+    color: var(--cor1);
+    font-weight: 400;
+}
 
+main > section.img-p {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -65,35 +65,19 @@ main > section.img-p {
 
     margin-left: auto;
     margin-right: auto;
-    max-width: 1300px;
-    min-width: 250px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 12vw;
+    padding-right: 12vw;
+
+    padding-top: 35vh;
+    padding-bottom: 35vh;
 }
 
 main > section.img-p > h2 {
     font-family: var(--font-titulo);
+    color: var(--cor0);
     font-weight: 700;
-    font-size: 3em;
-}
-
-@media (max-width: 950px) {
-    main > section.img-p > h2 {
-        font-size: 2.5em;
-    }
-}
-
-@media (max-width: 750px) {
-    main > section.img-p > h2 {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 550px) {
-    main > section.img-p > h2 {
-        font-size: 1.6em;
-    }
+    font-size: 4em;
 }
 
 main > section#sobre {
@@ -101,13 +85,142 @@ main > section#sobre {
 
     text-align: center;
 
-    padding-left: 17vw;
-    padding-right: 17vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    padding-top: 12vh;
+    padding-bottom: 12vh;
 }
 
-@media (max-width: 300px) {
-    main > section#sobre {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+main > section#sobre > article > h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+main > section#sobre > article > h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-weight: 700;
+    padding-top: 50px;
+    font-size: 3em;
+}
+
+main > section#sobre > article > aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main > section#sobre > article > aside > div {
+    padding: 3.5vw 6vw;
+}
+
+main > section#sobre > article > a {
+    padding: 10px 20px;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main > section#sobre > article > a:hover {
+    color: white;
+    text-decoration: underline;
+    font-size: 1em;
+    background-color: var(--cor0);
+    transition: all 200ms ease-out;
+}
+
+main > section#sobre > article > button {
+    border-radius: 25px;
+}
+
+main > section#projetos {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 12vw;
+    padding-right: 12vw;
+
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+}
+
+main > section#projetos > article > h1 {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 4em;
+}
+
+main > section#projetos > article > p {
+    font-size: 1.5em;
+    margin-bottom: 12vh;
+}
+
+main > section#projetos > article > a {
+    padding: 10px 20px;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main > section#projetos > article > a:hover {
+    color: white;
+    text-decoration: underline;
+    font-size: 1em;
+    background-color: var(--cor0);
+    transition: all 200ms ease-out;
+}
+
+main > section#contato {
+    background-color: var(--cor3);
+
+    height: 20vh;
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 10vh;
+    padding-bottom: 12vh;
+}
+
+main > section#contato > h2 {
+    font-family: var(--font-titulo);
+    color: var(--cor0);
+    font-weight: 700;
+    font-size: 3em;
+}
+
+main > section#contato > article {
+    padding-top: 15px;
+}
+
+footer {
+    background-color: var(--cor3);
+
+    text-align: center;
+    font-family: var(--font-texto);
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    font-size: 1em;
+    padding-bottom: 10px;
 }
