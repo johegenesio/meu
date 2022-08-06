@@ -77,7 +77,24 @@ main > section.img-p > h2 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 4em;
+}
+
+@media (max-width: 1250px) {
+    main > section.img-p {
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main > section.img-p > h2 {
+        font-size: 3em;
+        text-align: center;
+    }
 }
 
 main > section#sobre {
@@ -95,7 +112,7 @@ main > section#sobre > article > h1 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 3.8vw;
+    font-size: 3.8em;
 }
 
 main > section#sobre > article > h2 {
@@ -103,7 +120,20 @@ main > section#sobre > article > h2 {
     color: var(--cor0);
     font-weight: 700;
     padding-top: 50px;
-    font-size: 3vw;
+    font-size: 3em;
+}
+
+@media (max-width: 1250px) {
+    main > section#sobre > article > h1 {
+        font-size: 3em;
+    }
+    main > section#sobre > article > h2 {
+        font-size: 2.4em;
+    }
+    main > section#sobre {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
 }
 
 main > section#sobre > article > aside {
@@ -159,11 +189,20 @@ main > section#projetos > article > h1 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 3.8vw;
+    font-size: 3.8em;
+}
+
+@media (max-width: 1250px) {
+    main > section#projetos > article > h1 {
+        font-size: 3em;
+    }
+    main > section#projetos > article > p {
+        font-size: 1em;
+    }
 }
 
 main > section#projetos > article > p {
-    font-size: 1.5vw;
+    font-size: 1.5em;
     margin-bottom: 12vh;
 }
 
@@ -203,8 +242,8 @@ main > section#projetos > article > a:hover {
         padding-left: 12vw;
         padding-right: 12vw;
 
-        padding-top: 15vh;
-        padding-bottom: 10vh;
+        padding-top: 12vh;
+        padding-bottom: 2vh;
 
         text-align: center;
     }
@@ -233,7 +272,7 @@ main > section#contato {
     margin-left: auto;
     margin-right: auto;
 
-    padding-top: 10vh;
+    padding-top: 12vh;
     padding-bottom: 12vh;
 }
 
@@ -241,7 +280,17 @@ main > section#contato > h2 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 3em;
+}
+
+@media (max-width: 1250px) {
+    main > section#contato > h2 {
+        font-size: 2.5em;
+    }
+    main > section#contato {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
 }
 
 main > section#contato > article {
