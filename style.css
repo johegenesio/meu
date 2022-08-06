@@ -77,7 +77,7 @@ main > section.img-p > h2 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4vw;
 }
 
 main > section#sobre {
@@ -95,7 +95,7 @@ main > section#sobre > article > h1 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 3.5em;
+    font-size: 3.8vw;
 }
 
 main > section#sobre > article > h2 {
@@ -103,7 +103,7 @@ main > section#sobre > article > h2 {
     color: var(--cor0);
     font-weight: 700;
     padding-top: 50px;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 main > section#sobre > article > aside {
@@ -142,7 +142,7 @@ main > section#projetos {
     display: flex;
     align-content: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     margin-left: auto;
@@ -159,11 +159,11 @@ main > section#projetos > article > h1 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 4em;
+    font-size: 3.8vw;
 }
 
 main > section#projetos > article > p {
-    font-size: 1.5em;
+    font-size: 1.5vw;
     margin-bottom: 12vh;
 }
 
@@ -183,6 +183,40 @@ main > section#projetos > article > a:hover {
     font-size: 1em;
     background-color: var(--cor0);
     transition: all 200ms ease-out;
+}
+
+.card {
+    width: 30rem;
+}
+
+@media (max-width: 1250px) {
+    main > section#projetos {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 12vw;
+        padding-right: 12vw;
+
+        padding-top: 15vh;
+        padding-bottom: 10vh;
+
+        text-align: center;
+    }
+    main > section#projetos > article {
+        margin-bottom: 10vh;
+    }
+    main > section#projetos > article > p {
+        margin-bottom: 6vh;
+    }
+    .card {
+        width: 22rem;
+    }
 }
 
 main > section#contato {
@@ -207,7 +241,7 @@ main > section#contato > h2 {
     font-family: var(--font-titulo);
     color: var(--cor0);
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 main > section#contato > article {
